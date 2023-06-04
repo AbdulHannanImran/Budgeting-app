@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta htt`p-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h1>BUDGETING APP</h1>
+    <div id="budgetMain">
+        <div id="budgetSub">
+            <h2>Budget</h2>
+            <input type="number" placeholder="Enter Total Amount" name="" min="2000" id="budgetInput" required><br><br><br>
+            <button id="budgetBtn" onClick="setBudgetUser()">Set Budget</button>
+        </div>
+    </div>
+    <div id="formMain">
+        <div id="formSub">
+            <form action="">
+                <label for="">Due Date</label><br><input type="date" name="" id="date" required><br><br><br>
+                <label for="">Total Amount</label><br><input type="text" name="" id="amount" required><br><br><br>
+                <label for="">Categories</label><br>
+                <select id="categories" required>
+                    <option>Cost Of Services Provided</option>
+                    <option value="Restaurants & Cafe">Restaurants & Cafe</option>
+                    <option value="Clothes & Shopping">Clothes & Shopping</option>
+                    <option value="Credits & Loans">Credits & Loans</option>
+                    <option value="Gifts Card">Gifts Card</option>
+
+                </select><br><br><br>
+                <label for="">Description</label><br><input type="text" name="" id=""><br><br><br>
+                <label for="">Payement Date</label><br><input type="date" name="" id="" required>
+
+            </form>
+        </div>
+    </div>
+    <div id="resultMain">
+        <div id="resultSub">
+            <div id="totalBudgetdiv">
+                <h1 class="balanceHeading">Total Budget</h1>
+                <p id="totalBudget"></p>
+            </div>
+            <div class="balance">
+                <h1 class="balanceHeading">Expensive</h1>
+                <p id="expensive"></p>
+            </div>
+            <div class="balance">
+                <h1 class="balanceHeading">Balance</h1>
+                <p id="balance"></p>
+            </div>
+        </div>
+
+    </div>
+<div class="listMainDiv">
+<table>
+    <tbody id="tableList">
+    <tr>
+        <th>Categories <br>Date</th>
+        <th>Amount</th>
+        <th>Remove Item</th>
+
+    </tr>
+    
+</tbody>
+</table>
+</div>
+    <!-- <div id="listMainDiv">
+        <div id="listSubDiv">
+            <h3 id="categoriesName">Restaurants & Cafe</h1>
+                <p id="dateList">01/02/2020</p>
+        </div>
+        <div id="amountDiv">
+            <p id="amountList">$100</p>
+        </div>
+        <div id="deletebtnDiv"><button id="btn"><i class="fa fa-trash"></i></button>
+        </div>
+    </div> -->
+</body>
+
+</html>
